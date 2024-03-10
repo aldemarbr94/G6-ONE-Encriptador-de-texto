@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto - Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div class="divHeader">
+                <img class="h1ImagenHeader" src="images/Logo-Alura.png" alt="Logo-Alura">
+                <h1 class="h1TituloHeader">Encriptador de Texto - Alura</h1>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="seccionIngresaTexto">
+                <textarea cols=30 rows=10 class="entradaUsuario" required placeholder="Ingrese el texto aquí"></textarea>
+                <div class="divBotonesEnc">
+                    <p><img src="images/sign_exclamation-circle-fill.png" alt="Signo de Exclamación"> Solo letras minúsculas, sin acentos y sin caracteres especiales</p>
+                    <button onclick="encriptar()" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="seccionMuestraTexto">
+                <textarea class="salidaUsuario" cols=30 rows=10 class="entradaUsuario"></textarea>
+                <p class="salidaUsuario1">Ningún mensaje fue encontrado</p>
+                <p class="salidaUsuario2">Ingresa el texto que desees encriptar o desencriptar</p>
+                <div class="divBotonCopiar">
+                    <button class="copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright">&copy Copyright Encriptador de Texto - Alura 2024</p>
+            <p class="copyright">Creado por AldemarB</p>
+        </footer>
+
+        <script src="app.js" defer></script>
+    </body>
+</html>
